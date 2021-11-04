@@ -61,9 +61,6 @@ a:visited {
 ul li {
   list-style: none;
 }
-img {
-  benefits-align: top;
-}
 
 h1,
 h2,
@@ -76,28 +73,48 @@ h6 {
 }
 /*---------------------------------*/
 /*font-family: "Oswald", sans-serif;*/
+.container {
+  max-width: 650px;
+}
+.container {
+  float: none;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
-  }
-}
 @media (max-width: 767px) {
-  .container {
-    max-width: 650px;
-  }
   .header_burger {
     display: block;
     position: relative;
     width: 30px;
     height: 20px;
   }
-  .header_burger::before,
+  /* .header_burger::before,
   .header_burger::after {
     content: "";
     background-color: black;
@@ -105,12 +122,10 @@ h6 {
     width: 100%;
     height: 2px;
     left: 0;
+  } */
+  .header_burger::before {
+    top: 0;
   }
-  .header_burger::before{
-    top:0;
-  }
-}
-@media (min-width: 767px) {
 }
 
 body {
@@ -138,14 +153,14 @@ body {
   width: 100%; /* Full width */
   z-index: 500;
 }
-.header :before {
+/* .header :before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 .container {
   max-width: 1180px;
   margin: 0 auto;
@@ -229,11 +244,7 @@ nav {
   padding-bottom: 0px;
   display: flex;
 }
-.container {
-  float: none;
-  width: 1170px;
-  margin: 0 auto;
-}
+
 .title-small {
   font-size: 30px;
   font-weight: 700;
@@ -437,9 +448,10 @@ nav {
 }
 
 .park_column {
-  flex: 0 1 33.333%;
+  /* flex: 0 1 33.333%; */
   padding: 0 22.5px;
   display: flex;
+  width: 33%;
 }
 .park_item {
   color: black;
@@ -456,11 +468,15 @@ nav {
   font-weight: 500;
 }
 .park_img {
-  width: 380px;
-  height: 290px;
+  max-width: 380px;
+  /* height: 290px; */
   float: none;
   margin: 0 auto;
 }
+.park_img img {
+  width: 100%;
+}
+
 .park_label {
   text-align: center;
   color: #242424;
