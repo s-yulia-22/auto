@@ -283,8 +283,6 @@ nav {
   background: black;
   box-shadow: none;
 }
-.right_image {
-}
 .image_car {
   position: relative;
   float: right;
@@ -888,7 +886,7 @@ nav {
     display: none;
   }
   .footer_column {
-    flex: 0 1 33.333%;
+    flex: 0 1 100%;
     margin: 0 0 10px 0;
   }
   .footer_contact {
