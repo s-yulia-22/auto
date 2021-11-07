@@ -96,7 +96,11 @@ body {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   margin: -50px 0 0 0;
-  z-index: 100;
+  z-index: 10;
+  position: relative;
+}
+.btn-2 {
+  z-index: 50;
   position: relative;
 }
 
@@ -658,7 +662,6 @@ nav {
 }
 .footer_contact {
   display: block;
-
 }
 /* медиа  */
 @media (min-width: 320px) {
@@ -764,17 +767,17 @@ nav {
   .footer ul {
     display: none;
   }
-}
-.footer_row{
-  flex-wrap: wrap;
-}
-.footer_column {
-  flex: 0 1 100%;
-  margin: 0 0 10px 0;
-}
-.footer_contact {
-  float: center;
-}
+
+  .footer_row {
+    flex-wrap: wrap;
+  }
+  .footer_column {
+    flex: 0 1 100%;
+    margin: 0 0 10px 0;
+  }
+  .footer_contact {
+    float: center;
+  }
 }
 @media (min-width: 460px) {
   .container {
