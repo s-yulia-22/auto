@@ -73,48 +73,42 @@ h6 {
 }
 /*---------------------------------*/
 /*font-family: "Oswald", sans-serif;*/
-.container {
+/* .container {
   max-width: 650px;
+} */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
 }
 .container {
   float: none;
   width: 100%;
   margin: 0 auto;
 }
-@media (min-width: 576px) {
-  .container {
-    width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container {
-    width: 1320px;
-  }
+.title-big {
+  font-size: 70px;
+  font-weight: 600;
+  color: rgb(0%, 0%, 0%, 0.1);
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin: -50px 0 0 0;
+  z-index: 100;
+  position: relative;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .header_burger {
     display: block;
     position: relative;
     width: 30px;
     height: 20px;
   }
-  /* .header_burger::before,
+} */
+/* .header_burger::before,
   .header_burger::after {
     content: "";
     background-color: black;
@@ -123,18 +117,7 @@ h6 {
     height: 2px;
     left: 0;
   } */
-  .header_burger::before {
-    top: 0;
-  }
-}
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  margin: 0;
-}
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -161,10 +144,7 @@ body {
   width: 100%;
   height: 100%;
 } */
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-}
+
 .header_row {
   display: flex;
   padding: 5px 0;
@@ -177,15 +157,17 @@ body {
 
 .navigation {
   width: 30%;
+  display: block;
 }
 nav {
   display: block;
 }
 .navigation ul,
 .messenger ul {
-  padding: 0 0 0 60px;
+  padding: 0 0 0 52px;
   margin: 0;
   list-style: none;
+  display: block;
 }
 .navigation ul li,
 .messenger ul li {
@@ -199,15 +181,21 @@ nav {
   display: block;
   font-size: 15px;
 }
+.navigation,
+.messenger,
+.tel {
+  display: block;
+}
 .messenger {
   width: 5%;
+  display: block;
 }
 .messenger ul li a {
   display: block;
   width: 25px;
 }
 .num-call-back {
-  width: 36%;
+  width: 33%;
   margin-left: 1%;
 }
 .tel {
@@ -253,18 +241,7 @@ nav {
   letter-spacing: -50%;
   padding: 0px 50px 0 0;
 }
-.title-big {
-  font-size: 148px;
-  font-weight: 600;
-  color: rgb(0%, 0%, 0%, 0.1);
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -50%;
-  margin: -50px 0 0 0;
-  z-index: 100;
-  position: relative;
-}
+
 .left-text {
   width: 33%;
   margin-left: 2%;
@@ -351,9 +328,11 @@ nav {
   margin: 40px;
 }
 .reg {
+  display: block;
   color: white;
   font-size: 24px;
   font-weight: 600;
+  line-height: 30px;
   text-shadow: 1px 1px 2px rgba(66, 66, 66, 0.3);
 }
 .underline {
@@ -363,10 +342,10 @@ nav {
   font-weight: 600;
 }
 .last {
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 700;
   color: #ffcb11;
-  line-height: 36px;
+  line-height: 22px;
 }
 
 .benefits {
@@ -382,7 +361,6 @@ nav {
 }
 
 .benefits_body {
-  max-width: 1170px;
   margin: 0px auto;
 }
 .benefits_row {
@@ -439,7 +417,6 @@ nav {
 }
 
 .park_body {
-  max-width: 1200px;
   margin: 0px auto;
 }
 .park_row {
@@ -610,6 +587,7 @@ nav {
   opacity: 1;
 }
 /*end slider*/
+
 .footer {
   padding: 40px 0 0;
   background: #1e1e1e;
@@ -664,8 +642,7 @@ nav {
   background: white;
   color: black;
 }
-.callback-footer2 {
-}
+
 .footer_row2 {
   background-color: black;
   display: flex;
@@ -681,5 +658,829 @@ nav {
 }
 .footer_contact {
   display: block;
-  float: right;
+
 }
+/* медиа  */
+@media (min-width: 320px) {
+  .container {
+    width: 300px;
+  }
+  .title-big {
+    font-size: 38px;
+    padding: 25px 0 0 0;
+  }
+  .callback {
+    display: none;
+  }
+  .navigation,
+  .messenger,
+  .tel {
+    display: none;
+  }
+
+  .title-small {
+    font-size: 24px;
+    padding: 0px 15px 0 0;
+    margin: -37px 0 25px 0;
+  }
+  .left-text {
+    width: 100%;
+  }
+  .h2-t1 h2 {
+    font-size: 30px;
+  }
+  .right_image {
+    float: center;
+    width: 100%;
+  }
+  .image_car img {
+    width: 100%;
+    padding: 156px 0 0 0;
+  }
+  .h3-t2 {
+    font-size: 18px;
+    padding: 9px 0 0 0;
+    letter-spacing: -1px;
+  }
+  .second-screen h2 {
+    font-size: 18px;
+  }
+  .second-screen h1 {
+    font-size: 36px;
+    margin: 20px 0 0 0;
+  }
+  .second-screen {
+    background-position: center;
+  }
+  .text-gor p {
+    margin: 19px;
+  }
+  .reg {
+    display: none;
+  }
+  .benefits {
+    padding: 50px 0;
+  }
+  .benefits_row {
+    flex-wrap: wrap;
+  }
+  .benefits_column {
+    flex: 0 1 100%;
+  }
+  .benefits_title {
+    font-size: 36px;
+  }
+  .park_row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .park_column {
+    width: 100%;
+    justify-content: center;
+  }
+  .park_text p {
+    font-size: 18px;
+    padding: 10px 0 0 0;
+    font-weight: 400;
+  }
+  .slider_title {
+    font-size: 36px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .callback2 {
+    margin-top: 0px;
+    padding: 9px 20px;
+  }
+  .footer_text {
+    font-size: 12px;
+  }
+  .tel2 {
+    background: none;
+    margin: -7px 0 6px 11px;
+    padding: 0px 10px 2px 12px;
+  }
+  .footer ul {
+    display: none;
+  }
+}
+.footer_row{
+  flex-wrap: wrap;
+}
+.footer_column {
+  flex: 0 1 100%;
+  margin: 0 0 10px 0;
+}
+.footer_contact {
+  float: center;
+}
+}
+@media (min-width: 460px) {
+  .container {
+    width: 430px;
+  }
+  .title-big {
+    font-size: 57px;
+  }
+  .callback {
+    display: none;
+  }
+  .navigation,
+  .messenger,
+  .tel {
+    display: none;
+  }
+
+  .title-small {
+    font-size: 24px;
+    padding: 0px 15px 0 0;
+    margin: -37px 0 25px 0;
+  }
+  .left-text {
+    width: 100%;
+  }
+  .h2-t1 h2 {
+    font-size: 30px;
+  }
+  .right_image {
+    float: center;
+    width: 100%;
+  }
+  .image_car img {
+    width: 100%;
+    padding: 100px 0 0 0;
+  }
+  .h3-t2 {
+    font-size: 18px;
+    padding: 9px 0 0 0;
+    letter-spacing: -1px;
+  }
+  .second-screen h2 {
+    font-size: 24px;
+  }
+  .second-screen h1 {
+    font-size: 36px;
+    margin: 20px 0 0 0;
+  }
+  .second-screen {
+    background-position: center;
+  }
+  .text-gor p {
+    margin: 15px;
+  }
+  .last {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffcb11;
+    line-height: 36px;
+  }
+  .reg {
+    display: none;
+  }
+  .benefits {
+    padding: 50px 0;
+  }
+  .benefits_row {
+    flex-wrap: wrap;
+  }
+  .benefits_column {
+    flex: 0 1 50%;
+  }
+  .benefits_title {
+    font-size: 36px;
+  }
+  .park_row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .park_column {
+    width: 100%;
+    justify-content: center;
+  }
+  .park_text p {
+    font-size: 18px;
+    padding: 10px 0 0 0;
+    font-weight: 400;
+  }
+  .slider_title {
+    font-size: 36px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .callback2 {
+    margin-top: 0px;
+    padding: 9px 20px;
+  }
+  .footer_text {
+    font-size: 12px;
+  }
+  .tel2 {
+    background: none;
+    margin: -7px 0 6px 11px;
+    padding: 0px 10px 2px 12px;
+  }
+  .footer ul {
+    display: none;
+  }
+  .footer_column {
+    flex: 0 1 33.333%;
+    margin: 0 0 10px 0;
+  }
+  .footer_contact {
+    float: right;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+  .callback {
+    display: none;
+  }
+  .navigation,
+  .messenger,
+  .tel {
+    display: none;
+  }
+
+  .title-small {
+    font-size: 24px;
+    padding: 0px 15px 0 0;
+    margin: -37px 0 25px 0;
+  }
+  .left-text {
+    width: 100%;
+  }
+  .h2-t1 h2 {
+    font-size: 30px;
+  }
+  .right_image {
+    float: center;
+    width: 100%;
+  }
+  .image_car img {
+    width: 100%;
+    padding: 100px 0 0 0;
+  }
+  .h3-t2 {
+    font-size: 18px;
+    padding: 9px 0 0 0;
+    letter-spacing: -1px;
+  }
+  .second-screen h2 {
+    font-size: 24px;
+  }
+  .second-screen h1 {
+    font-size: 36px;
+    margin: 20px 0 0 0;
+  }
+  .second-screen {
+    background-position: center;
+  }
+  .text-gor p {
+    margin: 30px;
+  }
+  .reg {
+    display: none;
+  }
+  .benefits {
+    padding: 50px 0;
+  }
+  .benefits_row {
+    flex-wrap: wrap;
+  }
+  .benefits_column {
+    flex: 0 1 50%;
+  }
+  .benefits_title {
+    font-size: 36px;
+  }
+  .park_row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .park_column {
+    width: 100%;
+    justify-content: center;
+  }
+  .park_text p {
+    font-size: 18px;
+    padding: 10px 0 0 0;
+    font-weight: 400;
+  }
+  .slider_title {
+    font-size: 36px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .callback2 {
+    margin-top: 0px;
+    padding: 9px 20px;
+  }
+  .footer_text {
+    font-size: 12px;
+  }
+  .tel2 {
+    background: none;
+    margin: -7px 0 6px 11px;
+    padding: 0px 10px 2px 12px;
+  }
+  .footer ul {
+    display: block;
+    margin: -13px 0 0 0;
+  }
+  .last {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffcb11;
+    line-height: 36px;
+  }
+  .footer_column {
+    flex: 0 1 33.333%;
+    margin: 0 0 10px 0;
+  }
+  .footer_contact {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+  .navigation,
+  .messenger,
+  .tel {
+    display: none;
+  }
+  .title-big {
+    font-size: 90px;
+  }
+  .title-small {
+    font-size: 24px;
+    padding: 0px 31px 0 0;
+    margin: -20px 0 18px 0;
+  }
+  .h2-t1 h2 {
+    font-size: 30px;
+  }
+  .image_car img {
+    width: 100%;
+    padding: 100px 0 0 0;
+  }
+  .h3-t2 {
+    font-size: 24px;
+    padding: 9px 0 0 0;
+    letter-spacing: -1px;
+  }
+  .second-screen h2 {
+    font-size: 24px;
+  }
+  .second-screen h1 {
+    font-size: 40px;
+    margin: 52px 0 0 0;
+  }
+  .second-screen {
+    background-position: center;
+  }
+  .text-gor p {
+    margin: 30px;
+  }
+  .reg {
+    color: white;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .benefits_row {
+    flex-wrap: wrap;
+  }
+  .benefits_column {
+    flex: 0 1 50%;
+  }
+  .benefits_title {
+    font-size: 36px;
+  }
+  .park_row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .park_column {
+    width: 100%;
+    justify-content: center;
+  }
+  .park_text p {
+    font-size: 18px;
+    padding: 10px 0 0 0;
+    font-weight: 400;
+  }
+  .slider_title {
+    font-size: 36px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .callback {
+    display: block;
+  }
+  .footer ul {
+    display: block;
+  }
+  .last {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffcb11;
+    line-height: 36px;
+  }
+  .footer_column {
+    flex: 0 1 33.333%;
+    margin: 0 0 10px 0;
+  }
+  .footer_contact {
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+  .logo img {
+    width: 100%;
+    justify-content: center;
+  }
+  .messenger {
+    display: none;
+  }
+  .navigation ul,
+  .messenger ul {
+    padding: 0 0 0 0px;
+    display: block;
+  }
+  .num-call-back {
+    width: 40%;
+  }
+  .title-big {
+    font-size: 120px;
+  }
+  .h2-t1 h2 {
+    font-size: 50px;
+  }
+  .image_car img {
+    width: 100%;
+  }
+  .navigation,
+  .messenger,
+  .tel {
+    display: block;
+  }
+  .left-text {
+    width: 40%;
+  }
+  .right_image {
+    margin: -388px 0 0 0;
+  }
+  .callback {
+    display: block;
+  }
+  .reg {
+    display: block;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-shadow: 1px 1px 2px rgba(66, 66, 66, 0.3);
+  }
+  .second-screen h1 {
+    color: #000000;
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    text-align: center;
+    background-color: #ffcb11;
+    margin: 50px;
+  }
+  .second-screen h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  .text-gor p {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 40px;
+  }
+  .benefits_title {
+    text-align: center;
+    margin: 0 0 60px 0;
+    font-size: 48px;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .benefits_row {
+    display: flex;
+    margin: 0 -22.5px;
+  }
+
+  .benefits_column {
+    flex: 0 1 25%;
+    padding: 0 22.5px;
+    display: flex;
+  }
+  .benefits_item {
+    color: black;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .park_body {
+    margin: 0px auto;
+  }
+  .park_row {
+    display: flex;
+    margin: 0 -22.5px;
+  }
+
+  .park_column {
+    /* flex: 0 1 33.333%; */
+    padding: 0 22.5px;
+    display: flex;
+    width: 33%;
+  }
+  .park_item {
+    color: black;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .park_text p {
+    font-size: 18px;
+    text-align: left;
+    padding: 30px 0 0 0;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  .footer ul {
+    display: block;
+  }
+  .last {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffcb11;
+    line-height: 36px;
+  }
+  .footer_column {
+    flex: 0 1 33.333%;
+    margin: 0 0 10px 0;
+  }
+  .footer_contact {
+    float: right;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+  .navigation ul,
+  .messenger ul {
+    padding: 0 0 0 50px;
+    display: block;
+  }
+  .navigation,
+  .messenger,
+  .tel {
+    display: block;
+  }
+  .messenger {
+    margin: 0 20px 0 0;
+  }
+  .callback {
+    display: block;
+  }
+  .title-big {
+    font-size: 140px;
+  }
+  .image_car img {
+    margin: -200px 0 0 0;
+  }
+  .right_image {
+    margin: -274px 0 0 0;
+  }
+  .reg {
+    display: block;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-shadow: 1px 1px 2px rgba(66, 66, 66, 0.3);
+  }
+  .second-screen h1 {
+    color: #000000;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    text-align: center;
+    background-color: #ffcb11;
+    margin: 50px;
+  }
+  .second-screen h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  .text-gor p {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 40px;
+  }
+  .benefits_title {
+    text-align: center;
+    margin: 0 0 60px 0;
+    font-size: 48px;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .benefits_row {
+    display: flex;
+    margin: 0 -22.5px;
+  }
+
+  .benefits_column {
+    flex: 0 1 25%;
+    padding: 0 22.5px;
+    display: flex;
+  }
+  .benefits_item {
+    color: black;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .park_body {
+    margin: 0px auto;
+  }
+  .park_row {
+    display: flex;
+    margin: 0 -22.5px;
+  }
+
+  .park_column {
+    /* flex: 0 1 33.333%; */
+    padding: 0 22.5px;
+    display: flex;
+    width: 33%;
+  }
+  .park_item {
+    color: black;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .park_text p {
+    font-size: 18px;
+    text-align: left;
+    padding: 30px 0 0 0;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  .footer ul {
+    display: block;
+  }
+  .last {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffcb11;
+    line-height: 36px;
+  }
+  .footer_column {
+    flex: 0 1 33.333%;
+    margin: 0 0 10px 0;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+  .navigation ul,
+  .messenger ul {
+    padding: 0 0 0 50px;
+    display: block;
+  }
+  .navigation,
+  .messenger,
+  .tel {
+    display: block;
+  }
+  .callback {
+    display: block;
+  }
+  .title-big {
+    font-size: 160px;
+  }
+  .right_image {
+    margin: -274px 0 0 0;
+  }
+  .image_car img {
+    margin: -200px 0 0 0;
+  }
+  .reg {
+    display: block;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-shadow: 1px 1px 2px rgba(66, 66, 66, 0.3);
+  }
+  .second-screen h1 {
+    color: #000000;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    text-align: center;
+    background-color: #ffcb11;
+    margin: 50px;
+  }
+  .second-screen h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  .text-gor p {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 40px;
+  }
+  .benefits_title {
+    text-align: center;
+    margin: 0 0 60px 0;
+    font-size: 48px;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .benefits_row {
+    display: flex;
+    margin: 0 -22.5px;
+  }
+
+  .benefits_column {
+    flex: 0 1 25%;
+    padding: 0 22.5px;
+    display: flex;
+  }
+  .benefits_item {
+    color: black;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .park_body {
+    margin: 0px auto;
+  }
+  .park_row {
+    display: flex;
+    margin: 0 -22.5px;
+  }
+
+  .park_column {
+    /* flex: 0 1 33.333%; */
+    padding: 0 22.5px;
+    display: flex;
+    width: 33%;
+  }
+  .park_item {
+    color: black;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .park_text p {
+    font-size: 18px;
+    text-align: left;
+    padding: 30px 0 0 0;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  .footer ul {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffcb11;
+    line-height: 36px;
+  }
+  .footer_column {
+    flex: 0 1 33.333%;
+    margin: 0 0 10px 0;
+  }
+}
+
+/* медиа  */
