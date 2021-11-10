@@ -140,16 +140,8 @@ body {
   width: 100%; /* Full width */
   z-index: 500;
 }
-/* .header :before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
 
-.header_row {
+.header_body {
   display: flex;
   padding: 5px 0;
   justify-content: space-between;
@@ -166,8 +158,7 @@ body {
 nav {
   display: block;
 }
-.navigation ul,
-.messenger ul {
+.navigation ul{
   padding: 0 0 0 52px;
   margin: 0;
   list-style: none;
@@ -185,19 +176,11 @@ nav {
   display: block;
   font-size: 15px;
 }
-.navigation,
-.messenger,
 .tel {
   display: block;
 }
-.messenger {
-  width: 5%;
-  display: block;
-}
-.messenger ul li a {
-  display: block;
-  width: 25px;
-}
+
+
 .num-call-back {
   width: 33%;
   margin-left: 1%;
@@ -206,7 +189,7 @@ nav {
   text-decoration: none;
   color: black;
   font-size: 20px;
-  margin-top: 14px;
+  margin-top: 20px;
   display: block;
   float: left;
 }
@@ -425,7 +408,6 @@ nav {
   display: flex;
   margin: 0 -22.5px;
 }
-
 .park_column {
   /* flex: 0 1 33.333%; */
   padding: 0 22.5px;
@@ -1117,7 +1099,6 @@ nav {
   .navigation ul,
   .messenger ul {
     padding: 0 0 0 0px;
-    display: block;
   }
   .num-call-back {
     width: 40%;
@@ -1128,11 +1109,16 @@ nav {
   .h2-t1 h2 {
     font-size: 50px;
   }
+  .tel {
+       font-size: 16px;
+  }
+  .messenger{
+    display: none;
+  }
   .image_car img {
     width: 100%;
   }
   .navigation,
-  .messenger,
   .tel {
     display: block;
   }
@@ -1257,7 +1243,7 @@ nav {
     display: block;
   }
   .messenger {
-    margin: 0 20px 0 0;
+    margin: 0 0px 0 0;
   }
   .callback {
     display: block;
@@ -1271,216 +1257,17 @@ nav {
   .right_image {
     margin: -274px 0 0 0;
   }
-  .reg {
-    display: block;
-    color: white;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 30px;
-    text-shadow: 1px 1px 2px rgba(66, 66, 66, 0.3);
-  }
+
   .second-screen h1 {
-    color: #000000;
-    font-size: 48px;
-    font-weight: 500;
-    letter-spacing: -1px;
-    text-align: center;
-    background-color: #ffcb11;
-    margin: 50px;
+     font-size: 48px;
   }
-  .second-screen h2 {
-    font-size: 30px;
-    font-weight: 500;
-    letter-spacing: -1px;
-    text-align: center;
-  }
-  .text-gor p {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    margin: 40px;
-  }
-  .benefits_title {
-    text-align: center;
-    margin: 0 0 60px 0;
-    font-size: 48px;
-    color: #000000;
-    font-weight: 700;
-    letter-spacing: -1px;
-  }
-  .benefits_row {
-    display: flex;
-    margin: 0 -22.5px;
-  }
-
-  .benefits_column {
-    flex: 0 1 25%;
-    padding: 0 22.5px;
-    display: flex;
-  }
-  .benefits_item {
-    color: black;
-    padding: 0 0 20px 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .park_body {
-    margin: 0px auto;
-  }
-  .park_row {
-    display: flex;
-    margin: 0 -22.5px;
-  }
-
-  .park_column {
-    /* flex: 0 1 33.333%; */
-    padding: 0 22.5px;
-    display: flex;
-    width: 33%;
-  }
-  .park_item {
-    color: black;
-    padding: 0 0 20px 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .park_text p {
-    font-size: 18px;
-    text-align: left;
-    padding: 30px 0 0 0;
-    letter-spacing: -1px;
-    line-height: 1.2;
-    font-weight: 500;
-  }
-  .footer ul {
+   .footer ul {
     display: block;
-  }
-  .last {
-    font-size: 36px;
-    font-weight: 700;
-    color: #ffcb11;
-    line-height: 36px;
-  }
-  .footer_column {
-    flex: 0 1 33.333%;
-    margin: 0 0 10px 0;
   }
 }
 @media (min-width: 1400px) {
   .container {
     width: 1320px;
-  }
-  .navigation ul,
-  .messenger ul {
-    padding: 0 0 0 50px;
-    display: block;
-  }
-  .navigation,
-  .messenger,
-  .tel {
-    display: block;
-  }
-  .callback {
-    display: block;
-  }
-  .title-big {
-    font-size: 160px;
-  }
-  .right_image {
-    margin: -274px 0 0 0;
-  }
-  .image_car img {
-    margin: -200px 0 0 0;
-  }
-  .reg {
-    display: block;
-    color: white;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 30px;
-    text-shadow: 1px 1px 2px rgba(66, 66, 66, 0.3);
-  }
-  .second-screen h1 {
-    color: #000000;
-    font-size: 48px;
-    font-weight: 500;
-    letter-spacing: -1px;
-    text-align: center;
-    background-color: #ffcb11;
-    margin: 50px;
-  }
-  .second-screen h2 {
-    font-size: 30px;
-    font-weight: 500;
-    letter-spacing: -1px;
-    text-align: center;
-  }
-  .text-gor p {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    margin: 40px;
-  }
-  .benefits_title {
-    text-align: center;
-    margin: 0 0 60px 0;
-    font-size: 48px;
-    color: #000000;
-    font-weight: 700;
-    letter-spacing: -1px;
-  }
-  .benefits_row {
-    display: flex;
-    margin: 0 -22.5px;
-  }
-
-  .benefits_column {
-    flex: 0 1 25%;
-    padding: 0 22.5px;
-    display: flex;
-  }
-  .benefits_item {
-    color: black;
-    padding: 0 0 20px 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .park_body {
-    margin: 0px auto;
-  }
-  .park_row {
-    display: flex;
-    margin: 0 -22.5px;
-  }
-
-  .park_column {
-    /* flex: 0 1 33.333%; */
-    padding: 0 22.5px;
-    display: flex;
-    width: 33%;
-  }
-  .park_item {
-    color: black;
-    padding: 0 0 20px 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .park_text p {
-    font-size: 18px;
-    text-align: left;
-    padding: 30px 0 0 0;
-    letter-spacing: -1px;
-    line-height: 1.2;
-    font-weight: 500;
-  }
-  .footer ul {
-    display: block;
-    font-size: 36px;
-    font-weight: 700;
-    color: #ffcb11;
-    line-height: 36px;
-  }
-  .footer_column {
-    flex: 0 1 33.333%;
-    margin: 0 0 10px 0;
   }
 }
 

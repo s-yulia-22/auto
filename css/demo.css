@@ -61,25 +61,25 @@
 .hystmodal__close {
   position: absolute;
   z-index: 10;
-  top: 4px;
-  right: -40px;
+  top: 10px;
+  right: 10px;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: transparent;
   background-position: 50%;
   background-repeat: no-repeat;
-  background-image: url("../img/1727490.svg");
+  background-image: url("../img/close_icon.svg");
   background-size: 100% 100%;
   border: none;
   font-size: 0;
   cursor: pointer;
   outline: none;
 }
-.hystmodal__close:focus {
+/* .hystmodal__close:focus {
   outline: 2px dotted #afb3b9;
   outline-offset: 2px;
-}
+} */
 .hystmodal__window {
   margin: 50px 0;
   box-sizing: border-box;
